@@ -5,7 +5,6 @@ from argparse import ArgumentParser
 from datetime import datetime
 from mysql.connector import errorcode
 
-
 import config
 
 
