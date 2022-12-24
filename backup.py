@@ -27,6 +27,7 @@ def establish_connection():
         host=config.host,
         user=config.user,
         password=config.password,
+        port=config.port,
     )
 
 
