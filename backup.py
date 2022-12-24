@@ -33,7 +33,7 @@ def establish_connection():
 def main(path_to_file = default_path):
     try:
         connection = establish_connection()
-        df = pd.read_sql('select * from db_django.app_solutions', con=connection)
+        df = pd.read_sql(f'select * from {config.db_name}', con=connection)
         path = os.path.join(path_to_file, file_name)
         df.to_csv(path)
         print(f'Saved backup to {path}')
