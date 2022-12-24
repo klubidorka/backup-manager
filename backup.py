@@ -1,9 +1,10 @@
-from argparse import ArgumentParser
-import pandas as pd
 import mysql.connector
 import os
-from mysql.connector import errorcode
+import pandas as pd
+from argparse import ArgumentParser
 from datetime import datetime
+from mysql.connector import errorcode
+
 
 import config
 
